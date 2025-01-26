@@ -1,5 +1,7 @@
 ---
-
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+const pageTitle = "Print Media Stock Levels";
 ---
 
 <html lang="en">
@@ -8,16 +10,11 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Print Media Stock Levels</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
-    <nav>
-      <ul class="flex gap-4">
-        <li><a href="/">Home</a></li>
-        <li><a href="/stock-levels/">Stock Levels</a></li>
-        <li><a href="/about/">About</a></li>
-      </ul>
-    </nav>
-    <h1 class="text-4xl font-bold text-blue-700">Print media stock levels</h1>
+    <Header />
+    <h1 class="text-4xl font-bold text-blue-700">{pageTitle}</h1>
+    <Footer />
   </body>
 </html>
